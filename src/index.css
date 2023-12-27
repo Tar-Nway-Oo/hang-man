@@ -1,0 +1,72 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(199, 223, 199);
+
+}
+
+.app {
+  min-width: 600px;
+  padding: 1.5em;
+}
+
+.word-to-guess {
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+
+.letter {
+  display: inline;
+  font-size: 3rem;
+  margin: 1em;
+  border-bottom: 5px solid;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.btn {
+  padding: .5em 1em;
+  font-size: 1.5rem;
+  border-radius: .3em;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: rgb(107, 160, 107);
+}
+
+.active {
+  background-color: rgb(74, 116, 68);
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status-text {
+  font-size: 1.5rem;
+}
+
+.restart-btn {
+  font-size: 1rem;
+  padding: .5em .7em;
+  background-color: blue;
+  color: white;
+  border-radius: .3em;
+}
+
+.restart-btn:hover {
+  background-color: rgb(4, 4, 122);
+}
