@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(199, 223, 199);
+  background-color: rgb(214, 240, 214);
 
 }
 
@@ -18,12 +18,13 @@ body {
   margin-top: 2em;
   margin-bottom: 2.5em;
   text-align: center;
+  word-wrap: break-word;
 }
 
 .letter {
   display: inline;
   font-size: 3rem;
-  margin: 1em;
+  margin: .5em;
   border-bottom: 5px solid;
 }
 
@@ -36,7 +37,7 @@ body {
 }
 
 .btn {
-  padding: .5em 1em;
+  padding: 1em 1.5em;
   font-size: 1.5rem;
   border-radius: .3em;
 }
@@ -56,12 +57,12 @@ body {
 }
 
 .status-text {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .restart-btn {
-  font-size: 1rem;
-  padding: .5em .7em;
+  font-size: 1.5rem;
+  padding: .7em 1.5em;
   background-color: blue;
   color: white;
   border-radius: .3em;
@@ -69,4 +70,15 @@ body {
 
 .restart-btn:hover {
   background-color: rgb(4, 4, 122);
+}
+
+@media (min-width: 600px) {
+  .btn {
+    font-size: 1.2em;
+  }
+
+  .restart-btn {
+    font-size: 1.2rem;
+    padding: .5em 1em;
+  }
 }
